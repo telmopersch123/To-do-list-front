@@ -1,0 +1,42 @@
+/* Container do campo de pesquisa */
+.search {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #ffffffda;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Título */
+.search h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+/* Campo de input */
+.search input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  background-color: #fdfdfd;
+  transition: border 0.3s ease;
+}
+
+.search input:focus {
+  border-color: #3498db;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .search h2 {
+    font-size: 1.3rem;
+  }
+
+  .search input {
+    font-size: 0.95rem;
+  }
+}
