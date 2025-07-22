@@ -1,4 +1,5 @@
 import React from "react";
+import { FaSearch } from "react-icons/fa";
 import "./css/Search.css";
 
 const Search = ({
@@ -11,12 +12,15 @@ const Search = ({
   return (
     <div className="search">
       <h2>Pesquisar</h2>
-      <input
-        type="text"
-        placeholder="Pesquisar..."
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-      />
+      <div className="input-wrapper">
+        <FaSearch className="search-icon" />
+        <input
+          type="text"
+          placeholder="Pesquisar..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+      </div>
     </div>
   );
 };

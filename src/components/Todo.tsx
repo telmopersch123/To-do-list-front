@@ -1,10 +1,10 @@
 import type { TaskProps } from "../types/typeProps";
+import "./css/Todo.css";
 
 const Todo = ({ todoList, removeTodo, completeTodo }: TaskProps) => {
   return (
     <div
-      className="todo"
-      style={{ textDecoration: todoList.isCompleted ? "line-through" : "" }}
+      className={`todo ${todoList.isCompleted ? "completed" : "notCompleted"}`}
     >
       <div className="content">
         <p className="text">{todoList.text}</p>
